@@ -196,6 +196,8 @@ endif
 # This code is taken from https://github.com/sh1r0/caffe-android-lib
 ifeq ($(USE_HDF5), 1)
 	LIBRARIES += hdf5_hl hdf5
+	INCLUDE_DIRS += /usr/include/hdf5/serial/
+	LIBRARY_DIRS += /usr/lib/x86_64-linux-gnu/hdf5/serial/
 endif
 ifeq ($(USE_OPENCV), 1)
 	LIBRARIES += opencv_core opencv_highgui opencv_imgproc

@@ -898,7 +898,7 @@ message LRNParameter {
   // layer unaffected. If it is false, deconv activations will be
   // affected by LRN layers the same as backprop diffs are (will pass
   // through the derivative of the layer).
-  optional bool deconv_ignore = 6 [default = false];
+  optional bool deconv_ignore = 7 [default = false];
 }
 
 message MemoryDataParameter {
